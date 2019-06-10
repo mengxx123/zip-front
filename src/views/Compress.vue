@@ -1,11 +1,11 @@
 <template>
-    <my-page title="压缩2">
-        <div id="container">
+    <my-page title="压缩">
+        <div class="common-container container" id="container">
             <ui-article>
                 <ol id="demo-container">
                     <li>
                         <label>
-                            <span class="form-label">choose temporary storage</span>
+                            <span class="form-label">选择 temporary storage</span>
                             <select id="creation-method-input">
                                 <option value="Blob">RAM</option>
                                 <option value="File">HDD</option>
@@ -14,31 +14,30 @@
                     </li>
                     <li>
                         <label>
-                            <span class="form-label">add files into the zip</span>
+                            <span class="form-label">上传多个文件</span>
                             <input type="file" multiple id="file-input">
                         </label>
                     </li>
                     <li>
-                        <span class="form-label">view zip content</span>
+                        <span class="form-label">查看压缩包内容</span>
                         <ul id="file-list">
                         </ul>
                     </li>
                     <li>
                         <label>
-                            <span class="form-label">set zip file name</span>
+                            <span class="form-label">设置压缩包文件名</span>
                             <input type="text" id="filename-input" value="Example.zip">
                         </label>
                     </li>
                     <li>
-                        <span class="form-label">download the zip file</span>
-                        <a id="download-button" href="#">Download</a>
+                        <span class="form-label">下载压缩文件</span>
+                        <a id="download-button" href="#">下载</a>
                     </li>
                 </ol>
             </ui-article>
+            <!-- <ui-raised-button label="一键下载" primary @click="download" /> -->
+            <!-- https://gildas-lormeau.github.io/zip.js/core-api.html#zip-writing -->
         </div>
-        <ui-raised-button label="一键下载" primary @click="download" />
-        https://gildas-lormeau.github.io/zip.js/core-api.html#zip-writing
-    
     </my-page>
 </template>
 

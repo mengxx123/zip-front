@@ -50,7 +50,7 @@
         "getEntries" : function() {
             var result = [];
             for(var i= 0, len = this.entries.length ; i<len;  i++ ) {
-                result.push( this.entries[i].filename );
+                result.push( this.entries[i]);
             }
             return result;
         },
