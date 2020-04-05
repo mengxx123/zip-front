@@ -5,12 +5,12 @@
                 <img class="logo" src="https://icons.yunser.com/icons/tool.svg">
             </div>
             <ui-list @itemClick="toggle()">
-                <ui-list-item title="解压" to="/">
+                <ui-list-item title="首页" to="/">
                     <ui-icon slot="left" value="grade"/>
                 </ui-list-item>
-                <ui-list-item title="压缩" to="/compress">
+                <!-- <ui-list-item title="压缩" to="/compress">
                     <ui-icon slot="left" value="grade"/>
-                </ui-list-item>
+                </ui-list-item> -->
                 <ui-list-item title="关于" href="https://project.yunser.com/products/785c2ec0851711e9bcdac3da32d7daef" target="_blank">
                     <ui-icon slot="left" value="info"/>
                 </ui-list-item>
